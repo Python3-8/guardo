@@ -2,64 +2,41 @@
 <html>
 
 <head>
-  <title>Guardo: Your guide to safety</title>
+  <title>Guardo: Create a safer world</title>
   <link rel="stylesheet" href="/static/global.css">
-  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
 </head>
 
 <body>
-  <div class="main">
-    <h1>Guardo</h1>
-    <h2>Your guide to safety</h2>
-    <hr>
-    <p>Guardo offers a wide variety of hand-picked safety tips, which can be seamlessly sifted through to find those
-      most relevant to you.</p>
-    <input type="text" placeholder="search…">
-    <div class="cardholder">
-      <div class="card">
-        <h4>Card 1</h4>
-        <ul>
-          <li>Yes</li>
-          <li>…</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>No</h4>
-        <ul>
-          <li>Brooo</li>
-          <li>…</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Sample</h4>
-        <ul>
-          <li>Ugh</li>
-          <li>…</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>How much</h4>
-        <ul>
-          <li>More</li>
-          <li>…</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Ughhh</h4>
-        <ul>
-          <li>Come on</li>
-          <li>…</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Finally</h4>
-        <ul>
-          <li>it's</li>
-          <li>…</li>
-        </ul>
-      </div>
+  <h1>Guardo</h1>
+  <h2>Create a safer world</h2>
+  <hr>
+  <p>&emsp;Global warming is one of the biggest problems of today's world. Global warming leads to climate change,
+    which in turn has been increasing the risk of natural hazards all around the world.</p>
+  <p>&emsp;
+    <q>With increasing global surface temperatures the possibility of more droughts and increased intensity of storms
+      will
+      likely occur. As more water vapor is evaporated into the atmosphere it becomes fuel for more powerful storms to
+      develop. More heat in the atmosphere and warmer ocean surface temperatures can lead to increased wind speeds in
+      tropical storms. Rising sea levels expose higher locations not usually subjected to the power of the sea and to
+      the
+      erosive forces of waves and currents.</q> — <a
+      href="https://www.usgs.gov/faqs/how-can-climate-change-affect-natural-disasters#:~:text=With%20increasing%20global%20surface%20temperatures,more%20powerful%20storms%20to%20develop.">U.S.
+      Geological Survey</a>
+  </p>
+  <!-- <div class="cardholder">
+    {% for topic in data %}
+    <div class="card">
+      <a href={{'/' + topic['slug']}}>
+        <h4>{{ topic['title'] }}</h4>
+      </a>
+      <ul>
+        {% for tip in topic['tips'] %}
+        <li>{{ tip }}</li>
+        {% endfor %}
+      </ul>
     </div>
-  </div>
+    {% endfor %}
+  </div> -->
 </body>
 
 </html>
