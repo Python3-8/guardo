@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Guardo: Create a safer world</title>
+  <link rel="stylesheet" href="/static/global.css">
+</head>
+
+<body>
+  <h1 class="title">Guardo</h1>
+  <h2 class="subtitle">Create a safer world</h2>
+  <hr>
+  <h3 class="subheading">The problem</h3>
+  <p>&emsp;Global warming. Global warming, in simple terms, is the long-term increase in the Earth's average temperature
+    due
+    to the buildup of certain gases in the atmosphere, primarily carbon dioxide from human activities like burning
+    fossil fuels.</p>
+  <p></p>
+  <p>&emsp;For example, the majority of the electricity that we all use comes from power stations, which mostly burn
+    fossil fuels. Fossil fuels release carbon dioxide when burnt, which is a greenhouse gas. This is only one of the
+    many gases that human activities produce, which lead to global warming.</p>
+  <p>&emsp;Global warming is one of the biggest problems of today's world. Global warming leads to climate change,
+    which in turn has been increasing the risk of natural hazards all around the world. Global warming also induces
+    rising sea levels, which could engulf low-lying island territories in the future. These are just a fraction of the
+    problems caused by global warming.</p>
+  <p>&emsp;
+    <q>With increasing global surface temperatures the possibility of more droughts and increased intensity of storms
+      will
+      likely occur. As more water vapor is evaporated into the atmosphere it becomes fuel for more powerful storms to
+      develop. More heat in the atmosphere and warmer ocean surface temperatures can lead to increased wind speeds in
+      tropical storms. Rising sea levels expose higher locations not usually subjected to the power of the sea and to
+      the
+      erosive forces of waves and currents.</q> — <a
+      href="https://www.usgs.gov/faqs/how-can-climate-change-affect-natural-disasters" target="_blank"
+      rel="noopener noreferrer">U.S. Geological Survey</a>
+  </p>
+  <div class="imgsholder">
+    <div class="imgholder">
+      <img src="https://static.scientificamerican.com/sciam/cache/file/18BDD07D-BD81-42C8-962F00B2D48E4BC9_source.jpg"
+        alt="A drought caused by climate change"><span>A drought caused by climate change</span>
+    </div>
+    <div class="imgholder">
+      <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_31/2514836/180730-greece-fire-ac-1047p.jpg"
+        alt="A wildfire caused by climate change"><span>A wildfire caused by climate change</span>
+    </div>
+    <div class="imgholder">
+      <img
+        src="https://i.guim.co.uk/img/media/befcd02ed97d55c5f540b55fd6386dd8fa587737/0_0_2050_1229/master/2050.jpg?width=620&dpr=1&s=none"
+        alt="A low-lying island prone to flooding by rising sea levels">
+      <span>A low-lying island prone to flooding by rising sea levels</span>
+    </div>
+  </div>
+  <h3 class="subheading">Solutions</h3>
+  <p>&emsp;As can be seen in the pictures above, global warming poses a serious threat to global safety. Therefore, we,
+    the
+    members of team VWS Guardos have proposed solutions to aid in reducing global warming.</p>
+  <div class="cardholder">
+    {% for method in solutions %}
+    <div class="card">
+      <a href={{'/' + method['slug']}} target="_blank" rel="noopener noreferrer">
+        <h4>{{ method['title'] }}</h4>
+      </a>
+      <p>{{ method['short-description'] }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+
+</html>

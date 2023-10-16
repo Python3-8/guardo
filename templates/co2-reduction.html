@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CO&#8322; reduction | Guardo</title>
+    <link rel="stylesheet" href="/static/global.css">
+</head>
+
+<body>
+    <h1 class="title">CO&#8322; reduction</h1>
+    <hr>
+    <h3 class="subheading">Where is CO&#8322; emitted?</h3>
+    <p>&emsp;Carbon dioxide, i.e., CO&#8322;, is the main contributor to the enhanced greenhouse effect which causes
+        global
+        warming. Unfortunately, this gas is released in large proportions by various applications such as:</p>
+    <ul>
+        <li>Electricity generation (from fossil fuels)</li>
+        <li>Fuel-powered vehicles (e.g., petrol, diesel, gas)</li>
+        <li>Industrial processes (production of cement, steel, etc.)</li>
+        <li>Agriculture (production of livestock, use of fertilizers and pesticides)</li>
+    </ul>
+    <h3 class="subheading">The effects of CO&#8322;</h3>
+    <p>&emsp;Increased CO&#8322; emissions since the beginning of the Industrial Revolution have set atmospheric carbon
+        levels at a continuous rise.</p>
+    {% if data %}
+    <p>&emsp;The last time the carbon level was measured by NASA ({{ data['measured'] }}), the atmospheric carbon level
+        was a
+        whopping <strong>{{ data['carbonLevel'] }}</strong>.</p>
+    <p>&emsp;Below is a more accurate graph of atmospheric carbon levels:</p>
+    {% else %}
+    <p>&emsp;Below is a graph of atmospheric carbon levels:</p>
+    {% endif %}
+    <div id="co2-widget-container"></div>
+    <script type="text/javascript"
+        src="https://www.climatelevels.org/graphs/js/co2.php?theme=dark-unica&pid=2degreesinstitute"></script>
+    <h3 class="subheading">Ways to reduce CO&#8322;</h3>
+    <p>&emsp;One of the easiest ways to reduce your carbon footprint is reducing your reliance on fuel-powered vehicles.
+        You
+        may instead walk, bike, or use public transportation. Carpooling is also an effective way to reduce CO&#8322;
+        emissions, as more people are transported with the same amount of carbon dioxide released.</p>
+    <div class="imgholder"><img src="https://qph.cf2.quoracdn.net/main-qimg-88df021e92ff1db18cada695cc9ade75-pjlq"
+            alt="Carpooling reduces carbon emissions">
+        <span>Carpooling reduces carbon emissions</span>
+    </div>
+    <p>&emsp;Another very easy way to reduce your carbon footprint is energy efficiency. Turn off electrical appliances
+        when not in use. This can save electricity and therefore reduce the amount of carbon dioxide emitted in
+        producing electricity. This method comes with the added benefit that your electricity bill may be lower.</p>
+    <p>&emsp;<q>Nearly 70% of residential CO&#8322; emissions come from electricity generation. As lighting accounts for
+            nearly 10% of residential electricity use, reducing the total energy used by lighting has the potential to
+            decrease carbon dioxide emissions.</q> — <a href="https://par.nsf.gov/servlets/purl/10123545"
+            target="_blank" rel="noopener noreferrer">National Science Foundation</a>
+    </p>
+    <p>&emsp;Supporting renewable sources of energy can go a long way in reducing your carbon footprint. Renewable
+        sources are sources of energy which can never be run out of (e.g., solar power, wind power, hydroelectric power,
+        tidal power, etc.), whereas non-renewable sources like fossil fuels are vulnerable to depletion. Ways to support
+        renewable sources include:</p>
+    <ul>
+        <li>Using electric vehicles instead of fuel-powered vehicles</li>
+        <li>Choosing an energy provider that offers renewable energy options</li>
+        <li>Installing solar panels</li>
+    </ul>
+    <p>&emsp;These methods all ensure that you obtain energy with little to no carbon dioxide released into the
+        atmosphere.</p>
+    <p>&emsp;Livestock production is also a major source of greenhouse gas emissions. Therefore, consuming less meat can
+        be
+        an effective way of reducing your carbon footprint.</p>
+    <div class="imgholder">
+        <img src="https://ichef.bbci.co.uk/news/2048/cpsprodpb/164FB/production/_130478319_9299c26e-4082-4c3b-9174-e0d19cd57980.png"
+            alt="People who eat meat cause more CO₂ emmissions">
+        <span>People who eat meat cause more CO&#8322; emmissions</span>
+    </div>
+</body>
+
+</html>

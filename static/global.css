@@ -1,82 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
 
-:root {
-  --title-subtitle-margin: 16px;
-}
-
 html,
 body {
-  height: 100vh
+  height: 100%;
 }
-
 
 body {
   font-family: 'Gabarito', sans-serif;
-  background-image: linear-gradient(#ffffff80, #ffffff80), url('/static/background.svg');
+  background-image: url('/static/background.png');
   background-size: cover;
   padding: 0;
   margin: 0;
   height: 100%;
+  font-size: 110%;
+  color: ghostwhite;
+}
+
+body * {
+  margin: 8px;
 }
 
 
-h1 {
+h1.title {
   text-align: center;
-  margin-top: 0;
-  margin-bottom: var(--title-subtitle-margin);
 }
 
-h2 {
+h2.subtitle {
   text-align: center;
-  color: dimgray;
-  margin: var(--title-subtitle-margin);
+  color: lightgray;
+}
+
+h3.subheading {
+  margin: 16px;
+}
+
+h4 {
+  margin: 12px;
+}
+
+a {
+  color: cyan;
+  padding: 0;
+  margin: 0;
 }
 
 p {
   padding-left: 8px;
 }
 
-p,
-li,
-h4 {
-  font-size: 110%;
+
+div.imgholder {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin: 4px;
 }
 
-h4 {
-  margin: 2px;
+div.imgsholder {
+  display: flex;
+  flex-direction: row;
+  width: 96%;
 }
 
-input {
-  width: 40%;
-  height: 30px;
-  border: 1px solid dimgray;
+div.imgholder img {
+  border: 1px solid ghostwhite;
   border-radius: 8px;
-  font-size: 18pt;
-  font-family: Gabarito, sans-serif;
-  margin-left: 32px;
+  width: 100%;
+  height: auto;
 }
-
 
 div.cardholder {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 div.card {
-  background-color: white;
-  border: 1px solid dimgray;
+  background-color: darkslategray;
+  border: 1px solid lightgray;
   border-radius: 8px;
-  width: 16%;
-  padding: 8px;
+  width: auto;
+  padding: 2px;
   margin: 16px 8px 0 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button {
-  height: 30px;
-  border: 1px solid dimgray;
-  border-radius: 8px;
-  font-size: 18pt;
-  font-family: Gabarito, sans-serif;
-  margin-left: 8px;
+strong {
+  font-size: 120%;
+  margin: 8px 2px;
 }
