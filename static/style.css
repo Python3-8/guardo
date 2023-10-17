@@ -52,7 +52,7 @@ p {
 div.imgholder {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 40%;
   margin: 4px;
 }
 
@@ -86,6 +86,11 @@ div.card {
 }
 
 strong {
+  margin: 2px;
+  font-size: 105%;
+}
+
+strong#carbon-level {
   font-size: 120%;
   margin: 8px 2px;
 }
@@ -104,4 +109,26 @@ div.title button {
   background-color: #00000000;
   color: ghostwhite;
   font-size: 120%;
+}
+
+sub {
+  margin: 0;
+}
+
+footer {
+  background-color: ghostwhite;
+  color: #333;
+  position: sticky;
+  width: 99.2%;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+}
+
+span#seconds {
+  margin: 2px;
+}
+
+div.maxheight {
+  height: 100%;
 }

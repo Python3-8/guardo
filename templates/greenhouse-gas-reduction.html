@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+{% block head %}
+{{ super() }}
+<title>Greenhouse gas reduction | Guardo</title>
+{% endblock %}
+
+{% block content %}
+<div class="title">
+    <form action="/"><button type="submit">&xlarr;</button></form>
+    <h1 class="title">Reduction of other greenhouse gases</h1>
+</div>
+<hr>
+<h3 class="subheading">What are the other greenhouse gases?</h3>
+<p>&emsp;Despite carbon dioxide being the most significant cause of global warming, there are other contributors such as
+    methane, nitrous oxide, and CFCs.</p>
+<div class="imgholder">
+    <img src="https://images.prismic.io/palmettoblog/861f9c02-f5a3-4c12-961c-ec1e773027dd_greenhouse-gas-emissions-by-source.png?auto=compress,format"
+        alt="Methane, nitrous oxide, and CFCs (fluorinated gases) follow carbon dioxide as factors for global warming">
+    <span>Methane, nitrous oxide, and CFCs (fluorinated gases) follow carbon dioxide as factors of global
+        warming</span>
+</div>
+<h3 class="subheading">Where are these greenhouse gases emitted?</h3>
+<p>&emsp;Methane is released in large proportions by many processes:</p>
+<ul>
+    <li>Agriculture (the digestive process of ruminant animals, manure management, and cultivation of rice release
+        methane)</li>
+    <li>Production and transportation of fossil fuels</li>
+    <li>Decomposition of organic waste</li>
+    <li>Burning of biomass</li>
+</ul>
+<div class="imgholder">
+    <img src="https://iowaenvironmentalfocus.files.wordpress.com/2018/12/2017-pie-chart.png"
+        alt="Methane, the second most significant contributor to global warming, is released by numerous human activities">
+    <span>Methane, the second most significant contributor to global warming, is released by numerous human
+        activities</span>
+</div>
+<p>&emsp;Nitrous oxide is released from (&#8560;) the use of chemical fertilizers and manure management in agriculture,
+    (&#8561;) the combustion of fossil fuels, (&#8562;) industrial chemical reactions, etc.</p>
+<div class="imgholder">
+    <img src="http://media.whatsyourimpact.org/graphs/human-sources-of-nitrous-oxide-emissions.png"
+        alt="Sources of nitrous oxide">
+    <span>Sources of nitrous oxide</span>
+</div>
+<p>&emsp;CFCs (chlorofluorocarbons) and halons not only act as greenhouse gases, but also towards ozone layer depletion.
+    The main uses of CFCs are as coolants in refrigerators and air conditioning systems and as propellants in aerosol
+    spray cans, whereas halons are useful in fire extinguishers. The dangers of using these substances have been
+    acknowledged (learn more about <a href="https://www.unep.org/ozonaction/who-we-are/about-montreal-protocol"
+        target="_blank" rel="noopener noreferrer">the Montreal Protocol</a>), and they are now being used less than
+    before.</p>
+<div class="imgsholder">
+    <iframe src="https://ourworldindata.org/grapher/ozone-depleting-substance-consumption?time=earliest..2021"
+        loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    <iframe src="https://ourworldindata.org/grapher/countries-to-montreal-protocol-and-vienna-convention" loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    <p>&emsp;A large number of contries have subscribed to the Montreal Protocol and have been working towards reducing
+        the emissions of ozone-depleting substances.<br><br>
+        &emsp;It can be seen in the graph on the left that there has been a significant decline in emissions of
+        ozone-depleting substances. Their emissions have gone from a whopping 1.6 million tonnes in 1989 to less than
+        20,000 tonnes today.</p>
+</div>
+<h3 class="subheading">The effects of these greenhouse gases</h3>
+<p>&emsp;Similar to increased CO<sub>2</sub> emissions, increased emissions of these greenhouse gases can also
+    contribute to
+    the enhanced greenhouse effect and therefore towards global warming.</p>
+<div class="imgsholder">
+    <iframe src="https://ourworldindata.org/grapher/global-warming-by-gas-and-source" loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    <p>&emsp;Despite carbon dioxide being the most significant contributor to global warming, methane (CH<sub>4</sub>)
+        and nitrous oxide (N<sub>2</sub>O) also cause an increase in global temperature.</p>
+</div>
+<h3 class="subheading">Ways to reduce these greenhouse gases</h3>
+<p>&emsp;Supporting renewable sources of energy can go a long way in reducing not only your carbon footprint, but also
+    methane and nitrous oxide emissions as these gases are only released from fossil fuels, in terms of fuels. Renewable
+    sources are sources of energy which can never be run out of (e.g., solar power, wind power, hydroelectric power,
+    tidal power, etc.), whereas non-renewable sources like fossil fuels are vulnerable to depletion. Ways to support
+    renewable sources include:</p>
+<ul>
+    <li>Using electric vehicles instead of fuel-powered vehicles</li>
+    <li>Choosing an energy provider that offers renewable energy options</li>
+    <li>Installing solar panels</li>
+</ul>
+<p>&emsp;Energy efficiency also applies here. Using energy wisely, avoiding fuel-powered vehicles, and
+    preferring carpooling or public transportation over personal vehicles are all ways to reduce the use of fossil fuels
+    and thus also methane and nitrous oxide emissions.</p>
+<p>&emsp;Avoiding meat can be an effective way to reduce methane emissions, because as discussed earlier, livestock
+    produce a lot of methane.</p>
+<div class="imgholder">
+    <img src="data:image/png;base64,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"
+        alt="Meat causes massive methane emissions">
+    <span>Meat causes massive methane emissions</span>
+</div>
+<p>&emsp;Composting waste when possible can also help in reducing methane emissions from landfills.</p>
+<div class="imgsholder">
+    <div class="imgholder">
+
+        <img src="https://www.epa.gov/sites/default/files/2021-03/composting-food-waste-keeping-good-thing-going-2.jpg"
+            alt="Compostable waste is unfortunately thrown out">
+        <span>Compostable waste is unfortunately thrown out</span>
+    </div>
+    <div class="imgholder">
+        <img src="https://illinoiscomposts.org/wp-content/uploads/2019/09/Benefits-of-Composting.jpg"
+            alt="The benefits of composting">
+        <span>The benefits of composting</span>
+    </div>
+</div>
+{% endblock %}

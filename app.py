@@ -45,5 +45,15 @@ def co2_reduction():
     return render_template('co2-reduction.html', data=data)
 
 
+@app.route('/greenhouse-gas-reduction')
+def greenhouse_gas_reduction():
+    return render_template('greenhouse-gas-reduction.html')
+
+
+@app.errorhandler(404)
+def page_not_found(_):
+    return render_template('404.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)

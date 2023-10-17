@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block head %}
+{{ super() }}
+<title>Page not found | Guardo</title>
+{% endblock %}
+{% block content %}
+<h1 class="title">Page not found</h1>
+<hr>
+<p>Looks like that page doesn't exist. Click <a href="/">here</a> to go home.
+</p>
+<p>Redirecting to home page in <span id="seconds"></span> seconds…</p>
+<div class="maxheight"></div>
+<script>
+    let seconds = 5;
+    const url = '/';
+    const redirect = () => {
+        if (seconds <= 0) {
+            window.location = url;
+        } else {
+            document.getElementById('seconds').innerText = (seconds--).toString();
+            setTimeout(redirect, 1000);
+        }
+    }
+    redirect();
+</script>
+{% endblock %}
