@@ -69,6 +69,11 @@ div.imgholder img {
   height: auto;
 }
 
+div.imgsholder span,
+div.imgholder span {
+  margin-top: 2px;
+}
+
 div.cardholder {
   display: flex;
   flex-direction: row;
