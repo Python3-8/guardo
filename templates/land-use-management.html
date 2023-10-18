@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block head %}
+{{ super() }}
+<title>Land use management | Guardo</title>
+{% endblock %}
+{% block content %}
+<div class="title">
+    <form action="/"><button type="submit">&xlarr;</button></form>
+    <h1 class="title">Land use management</h1>
+</div>
+<hr>
+<h3 class="subheading">What is land use management?</h3>
+<p>&emsp;Land use is the way that the world's land is used. It may be used for farming, for buildings, for growing
+    trees, etc.</p>
+<p>&emsp;Forests and farms are referred to as '<a href="https://en.wikipedia.org/wiki/Carbon_sink" target="_blank"
+        rel="noopener noreferrer">carbon sinks</a>', meaning they absorb CO<sub>2</sub> and stop it from entering the
+    atmosphere. This is very useful because CO<sub>2</sub> is the most significant cause of global warming.
+    Unfortunately nowadays, trees are cleared and replaced by buildings and such, and steps are rarely taken to offset
+    this reduced absorption of carbon dioxide. This problem is known as deforestation.</p>
+<h3 class="subheading">The effects of exploitative land use</h3>
+<p>&emsp;Deforestation for urbanization and for agriculture reduces the presence of the world's most important carbon
+    sinks, causing carbon levels that are already soaring to increase further.</p>
+<div class="imgholder" style="width: 70%;">
+    <iframe src="https://ourworldindata.org/grapher/annual-deforestation?stackMode=absolute%C2%AEion" loading="lazy"
+        style="width: 100%; height: 600px; border: 0px none;"></iframe>
+    <span>Deforestation is a serious problem all over the world, and sadly Brazil, the home of the great Amazon
+        Rainforest, suffers the most</span>
+</div>
+The increased deforestation shown in the chart above is an active contributor to increased CO<sub>2</sub> levels in the
+atmosphere. A graph of atmospheric carbon levels is shown <a href="/co2-reduction#co2-widget-container" target="_blank"
+    rel="noopener noreferrer">here</a>.
+<h3 class="subheading">Ways to manage land use</h3>
+<p>&emsp;Reforestation and afforestation can be effective ways to offset the effects of deforestation. Reforestation is
+    the replanting of trees where there were once trees, whereas afforestation is the planting of trees on land where
+    there were no trees before, i.e., creating a new forest. The newly planted trees could replace previously cleared
+    trees and take their role of absorbing CO<sub>2</sub>.</p>
+<div class="imgsholder">
+    <div class="imgholder">
+        <img src="https://storage.googleapis.com/climate-science.appspot.com/en-v5/C1_3-Details-1-Figure_3_Afforestation_Vs_Reforestation.png"
+            alt="How reforestation and afforestation work">
+        <span>How reforestation and afforestation work</span>
+    </div>
+    <div class="imgholder">
+        <img src="https://www.iberdrola.com/documents/20125/40576/bosques_ENG.jpg/e467712e-e3d3-bedf-a555-fcaf1da888fb?t=1627463868591"
+            alt="The importance of forests" style="width: 136%;">
+        <span>The importance of forests</span>
+    </div>
+</div>
+<p>&emsp;If unable to plant more trees, the next best thing you could do would be to encourage reforestation and
+    afforestation. This way other people could work towards offsetting deforestation.</p>
+<p>&emsp;Since agriculture is another cause of deforestation, improving agricultural practices to enhance soil carbon
+    stocks can reduce the concentration of carbon in the atmosphere. These include covercropping, composting, etc. as
+    shown in the image below.</p>
+<div class="imgholder">
+    <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs44168-023-00055-4/MediaObjects/44168_2023_55_Fig1_HTML.png"
+        alt="Agricultural practices that absorb carbon">
+    <span>Agricultural practices that absorb carbon</span>
+</div>
+{% endblock %}

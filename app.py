@@ -50,6 +50,11 @@ def greenhouse_gas_reduction():
     return render_template('greenhouse-gas-reduction.html')
 
 
+@app.route('/land-use-management')
+def land_use_management():
+    return render_template('land-use-management.html')
+
+
 @app.errorhandler(404)
 def page_not_found(_):
     return render_template('404.html')
