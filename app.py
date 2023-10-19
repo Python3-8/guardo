@@ -55,10 +55,15 @@ def land_use_management():
     return render_template('land-use-management.html')
 
 
+@app.route('/technological-innovation')
+def technological_innovation():
+    return render_template('technological-innovation.html')
+
+
 @app.errorhandler(404)
 def page_not_found(_):
     return render_template('404.html')
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8888, debug=True)
