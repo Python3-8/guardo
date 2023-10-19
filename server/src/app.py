@@ -1,3 +1,4 @@
+import os
 from flask import Flask, redirect, url_for, render_template
 from scraper import get_carbon_level
 
@@ -66,4 +67,4 @@ def page_not_found(_):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8888, debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))

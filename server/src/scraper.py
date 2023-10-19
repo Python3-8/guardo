@@ -12,7 +12,7 @@ def remove_whitespace(text: str) -> str:
 
 def get_carbon_level():
     try:
-        raise Exception('This exception will be removed before deployment')
+        # raise Exception('This exception will be removed before deployment')
         start_time = time.time()
         html = requests.get(
             'https://climate.nasa.gov/vital-signs/carbon-dioxide/').text
