@@ -68,7 +68,7 @@ def page_not_found(_):
 
 def with_cache_headers(template_name, **kwargs):
     response = make_response(render_template(template_name, **kwargs))
-    response.headers['Cache-Control'] = 'public, s-maxage=300'
+    response.headers['Cache-Control'] = 'public, s-maxage=600'
     return response
 
 
